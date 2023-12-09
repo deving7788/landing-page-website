@@ -258,7 +258,7 @@ a {
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
-  font-size: 1.7cm;
+  font-size: 1.6cm;
   color: var(--clr-text);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 3rem 4rem 1rem 4rem;
@@ -301,6 +301,14 @@ a {
   animation: move-left 5s 1 ease-in-out;
 }
 
+@media screen and (max-width: 1550px) {
+  .introduction-content {
+    font-size: 1.3cm;
+  }
+  .introduction-container {
+    height: 600px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .introduction-content {
     font-size: 1cm;
