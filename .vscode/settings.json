@@ -1,0 +1,12 @@
+{
+  "emmet.excludeLanguages": [],
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.useInlineCompletions": true,
+  "html.format.contentUnformatted": "",
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.triggerExpansionOnTab": true,
+  "workbench.colorCustomizations": {
+    "sash.hoverBorder": "#65c89b"
+  },
+  "peacock.color": "#42b883"
+}
