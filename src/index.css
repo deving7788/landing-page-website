@@ -318,6 +318,15 @@ a {
   }
 }
 
+@media screen and (max-width: 500px){
+  .introduction-content {
+    font-size: 0.6cm;
+  }
+  .introduction-container {
+    height: 350px;
+  }
+}
+
 /************** End of Introduction **************/
 
 /************** Expertise **************/
