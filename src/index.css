@@ -152,6 +152,20 @@ a {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .main-logo img {
+    width: 90px;
+  }
+  .topbar-contact {
+    font-size: 0.8rem;
+    color: var(--clr-primary);
+    font-weight: bold;
+  }
+  .topbar-container h2 {
+    font-size: 1.2rem;
+  }
+}
+
 /************** End of Topbar ************/
 
 /************** Sidebar ************/
@@ -400,6 +414,10 @@ a {
   .expertise-sideImage {
     display: none;
   }
+
+  .expertise-subcontainer ul {
+    font-size: 1.3rem;
+  }
 }
 
 /************** End of Expertise *************/
@@ -459,6 +477,7 @@ a {
   width: 750px;
   top: -700px;
   margin: 0 auto;
+  padding-top: 1.5rem;
 }
 
 .large-img-card-container {
@@ -745,12 +764,12 @@ a {
 
   .large-img-layer-container {
     width: 350px;
-    top: -700px;
+    top: -600px;
   }
 
   .large-img-card-container {
-    width: 350px;
-    height: 250px;
+    width: 320px;
+    height: 220px;
   }
 
   .slide-controls-container {
@@ -1010,6 +1029,13 @@ a {
   transform: translateX(3px);
   transition: var(--transition-08);
   color: var(--clr-secondary);
+}
+
+@media screen and (max-width:500px) {
+  .social-container a {
+    font-size: 1.1rem;
+    padding-right: 1.1rem;
+  }
 }
 /************** End of Social Media ***********/
 
