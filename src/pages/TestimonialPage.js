@@ -5,7 +5,7 @@ const TestimonialPage = () => {
   return (
     <>
       <section className="testimonial-page">
-        <div className="btn">
+        <div className="back-btn btn">
           <Link to="/" className="router-Link">
             back
           </Link>
@@ -25,7 +25,7 @@ const TestimonialPage = () => {
             );
           })}
         </div>
-        <div className="btn">
+        <div className="back-btn btn">
           <Link to="/" className="router-Link">
             back
           </Link>

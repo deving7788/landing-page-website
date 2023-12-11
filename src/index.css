@@ -332,7 +332,7 @@ a {
   }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .introduction-content {
     font-size: 0.6cm;
   }
@@ -876,6 +876,24 @@ a {
     grid-template-columns: 1fr;
   }
 }
+@media screen and (max-width: 500px) {
+  .single-testimonial {
+    height: 450px;
+    width: 350px;
+    padding: 1rem;
+  }
+
+  .single-testimonial img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .testimonial-show-more {
+    width: 120px;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+}
 
 /************** End of Testimonial **************/
 
@@ -889,9 +907,19 @@ a {
 .testimonial-page > div:first-of-type {
   margin: 0 auto;
 }
+
+@media screen and (max-width: 500px) {
+
+  .back-btn {
+    width: 120px;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+}
+
 /************** End of Testimonial Page****************/
 
-/************** Contact Page****************/
+/************** Contact****************/
 .contact-section-container {
   position: relative;
   height: 1250px;
@@ -940,7 +968,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 4fr;
   margin-top: 0.8rem;
-  width: fit-content;
+  width: 450px;
 }
 
 .contact-form article > input {
@@ -968,7 +996,6 @@ a {
 .contact-form button {
   margin: 2rem auto 2rem 0rem;
   width: fit-content;
-  font-size: 20px;
   background-color: var(--clr-button);
   color: var(--clr-text);
   width: 120px;
@@ -981,7 +1008,7 @@ a {
   transition: var(--transition-05);
 }
 
-@media screen and (max-width:1250px) {
+@media screen and (max-width: 1250px) {
   .contact-form textarea {
     line-height: 1.3rem;
     height: 300px;
@@ -990,7 +1017,7 @@ a {
     padding: 0.5rem;
   }
 }
-@media screen and (max-width:750px) {
+@media screen and (max-width: 750px) {
   .contact-form textarea {
     line-height: 1.1rem;
     height: 200px;
@@ -1005,12 +1032,47 @@ a {
     text-indent: 2rem;
   }
 
-  .contact-section-container{
+  .contact-section-container {
     height: 1100px;
   }
 }
+@media screen and (max-width: 500px) {
+  .contact-form textarea {
+    height: 170px;
+    width: 330px;
+    font-size: 0.8rem;
+  }
+  .contact-section-content > div:first-of-type > div {
+    font-size: 1rem;
+    margin-bottom: 5rem;
+    text-indent: 2rem;
+  }
 
-/************** End of Contact Page****************/
+  .contact-section-container {
+    height: 1100px;
+  }
+
+  .contact-form article > input {
+    width: 220px;
+  }
+
+  .contact-form button {
+    width: 80px;
+    height: 40px;
+    font-size: large;
+  }
+
+  .contact-section-content > div:first-of-type > h1,
+  .contact-form > label:first-of-type > h1 {
+    font-size: x-large;
+  }
+
+  .contact-section-container {
+    height: 1000px;
+  }
+}
+
+/************** End of Contact****************/
 
 /************** Social Media *****************/
 
@@ -1031,7 +1093,7 @@ a {
   color: var(--clr-secondary);
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .social-container a {
     font-size: 1.1rem;
     padding-right: 1.1rem;
