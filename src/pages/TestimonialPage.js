@@ -25,7 +25,7 @@ const TestimonialPage = () => {
             );
           })}
         </div>
-        <div className="back-btn btn">
+        <div className="testimonial-btn btn">
           <Link to="/" className="router-Link">
             back
           </Link>

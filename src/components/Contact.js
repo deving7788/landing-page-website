@@ -1,6 +1,6 @@
 const Contact = () => {
   const emailChecker = (e) => {
-      const email = e.target;
+    const email = e.target;
     if (email.validity.typeMismatch) {
       email.setCustomValidity("Please enter a correct email address.");
     } else {
@@ -26,48 +26,50 @@ const Contact = () => {
     <>
       <section id="contact" className="contact-section-container">
         <div className="contact-section-top-layer"></div>
-        <div className="contact-section-content">
-          <div>
-            <h1>Give us a phone call or send an email.</h1>
+        <div className="contact-section-content-layer">
+          <div className="contact-section-content">
             <div>
-              <p>Tel: 00-000-000</p>
-              <p>Fax: 00-000-000</p>
-              <p>Email: admin@legalexpert.com</p>
-              <p>123 Main Street Anytown, USA 12345</p>
+              <div>Give us a phone call or send an email.</div>
+              <div>
+                <p>Tel: 00-000-000</p>
+                <p>Fax: 00-000-000</p>
+                <p>Email: admin@legalexpert.com</p>
+                <p>123 Main Street Anytown, USA 12345</p>
+              </div>
             </div>
-          </div>
 
-          <form className="contact-form" onSubmit={submitHandler}>
-            <label htmlFor="comment">
-              <h1>Or, leave a message. We will make contact.</h1>
-            </label>
-            <textarea
-              id="comment"
-              placeholder="Tell us what legal assistance you need. "
-              maxLength="5000"
-            ></textarea>
-            <div>
-              <article>
-                <label htmlFor="text">Name</label>
-                <input id="text" type="text" maxLength="50" />
-              </article>
-              <article>
-                <label htmlFor="tel">Tel</label>
-                <input id="tel" maxLength="50" />
-              </article>
-              <article>
-                <label htmlFor="email">Email*</label>
-                <input
-                  id="email"
-                  required
-                  type="email"
-                  maxLength="100"
-                  onInput={emailChecker}
-                />
-              </article>
-              <button type="submit">Submit</button>
-            </div>
-          </form>
+            <form className="contact-form" onSubmit={submitHandler}>
+              <label htmlFor="comment">
+                Or, leave a message. We will make contact.
+              </label>
+              <textarea
+                id="comment"
+                placeholder="Tell us what legal assistance you need. "
+                maxLength="5000"
+              ></textarea>
+              <div>
+                <article>
+                  <label htmlFor="text">Name</label>
+                  <input id="text" type="text" maxLength="50" />
+                </article>
+                <article>
+                  <label htmlFor="tel">Tel</label>
+                  <input id="tel" maxLength="50" />
+                </article>
+                <article>
+                  <label htmlFor="email">Email*</label>
+                  <input
+                    id="email"
+                    required
+                    type="email"
+                    maxLength="100"
+                    onInput={emailChecker}
+                  />
+                </article>
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </>

@@ -18,10 +18,13 @@ const Slides = () => {
   return (
     <>
       <section id="strength" className="slide-section-container">
-        <div>
-          <h1>our strength</h1>
+        <div
+          className={
+            show_large_image ? "section-title section-title-hidden" : "section-title"
+          }
+        >
+          our strength
         </div>
-
         <div
           className={
             show_large_image

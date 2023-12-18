@@ -22,7 +22,7 @@ const Sidebar = () => {
         <FontAwesomeIcon icon={faSquareXmark} className="hide-sidebar-btn" />
       </div>
       <div
-        className={hideSidebar ? "show-sidebar-btn" : "show-sidebar-btn hidden"}
+        className={hideSidebar ? "show-sidebar-btn" : "show-sidebar-btn sidebar-hidden"}
         onClick={() => setHideSidebar(false)}
       ></div>
       <div className="sidebar-items">

@@ -1,4 +1,3 @@
-
 import { expertise } from "../data";
 
 const expandExpertise = (item) => {
@@ -16,10 +15,10 @@ const Expertise = () => {
   return (
     <>
       <section id="expertise" className="expertise-container">
+        <div className="section-title">our expertise</div>
         <div className="expertise-subcontainer">
-          <h1>our expertise</h1>
           <ul>
-            {expertise.map((item) => {
+            {expertise.map((item, index) => {
               return (
                 <li key={item.id}>
                   <div
@@ -29,8 +28,19 @@ const Expertise = () => {
                     {item.icon}
                   </div>
                   <div>
-                    <span className="expertise-item-title" onClick={() => expandExpertise(item)}>{item.title}</span>
-                    <p className={"expertise-item-details details-hidden"}>
+                    <span
+                      className="expertise-item-title"
+                      onClick={() => expandExpertise(item)}
+                    >
+                      {item.title}
+                    </span>
+                    <p
+                      className={
+                        index == 0
+                          ? "expertise-item-details"
+                          : "expertise-item-details details-hidden"
+                      }
+                    >
                       {item.details}
                     </p>
                   </div>
@@ -39,9 +49,7 @@ const Expertise = () => {
             })}
           </ul>
         </div>
-        
       </section>
-      
     </>
   );
 };

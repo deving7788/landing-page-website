@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Testimonial = () => {
   return (
     <section id="testimonial" className="testimonial-section-container">
-      <h1>Testimonial</h1>
+      <div className="section-title">Testimonial</div>
       <div className="testimonial-container">
         {testimonial.map((item, index) => {
           const { id, name, avatar, title, text } = item;
@@ -24,7 +24,7 @@ const Testimonial = () => {
           }
         })}
       </div>
-      <div className="testimonial-show-more btn">
+      <div className="testimonial-btn btn">
         <Link to="testimonial" className="router-Link" reloadDocument={true}>
           show more
         </Link>
