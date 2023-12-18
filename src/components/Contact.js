@@ -34,7 +34,7 @@ const Contact = () => {
                 <p>Tel: 00-000-000</p>
                 <p>Fax: 00-000-000</p>
                 <p>Email: admin@legalexpert.com</p>
-                <p>123 Main Street Anytown, USA 12345</p>
+                <p>123 Main Street Anytown, Anycountry 12345</p>
               </div>
             </div>
 
